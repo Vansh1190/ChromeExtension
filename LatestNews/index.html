@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body {
+            padding: 2px;
+            background: linear-gradient(89deg, #765d90, #b746bb73);
+            width: 300px;
+            height: 440px;
+            margin: 0;
+            /* border: 2px solid white; */
+            padding: 4px;
+
+        }
+
+        #refresh {
+            margin: 5px;
+        }
+
+        #loading {
+            padding-left: 17px;
+            width: 60px;
+            margin: auto;
+            display: block;
+        }
+
+        .newsImg {
+            width: 98%;
+        }
+
+        small {
+            align-self: end;
+            font-size: 15px;
+            padding-right: 7%;
+        }
+
+        #title {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        p::-webkit-scrollbar {
+            display: none;
+            /* height: 2em */
+        }
+
+
+        #jokeElement {
+            display: flex;
+            flex-flow: column;
+            height: 395px;
+            background: linear-gradient(89deg, #765d90, #b746bb73);
+            flex-wrap: wrap;
+            overflow-y: scroll;
+            flex-flow: wrap;
+        }
+
+        .cont {
+            padding-bottom: 15px;
+            border-bottom: 2px solid black;
+            overflow: hidden;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+    </style>
+    <title>Latest News</title>
+</head>
+<body>
+    <button id="refresh">refresh</button>
+    <h1>Hi, This is my first</h1>
+    <p id="jokeElement"><img id="loading" src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt=""></p> 
+
+    <script src="background.js"></script> 
+</body>
+
+</html>
